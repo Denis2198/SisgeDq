@@ -1,0 +1,17 @@
+Importante !!
+Acceder al repositorio GitHub: https://github.com/Denis2198/SisgeDq.git. Seleccionar la opción <>Code y dar clic en 
+download ZIP. Se descargara una carpeta comprimida que tiene todos los archivos pp, html en conjunto con la base de datos usuarios para que funcione el proyecto.
+
+1. Crear una carpeta con el nombre SisgeDQ dentro de la carpeta XAMPP\htdocs. Dentro de ella copiar todos los archivos
+   con extension html y php.
+
+2. Para importar la base de datos dentro del entorno http://localhost/phpmyadmin/ seleccionar la pestaña importar.
+   Dentro de la opcion Archivo Importar, veremos un menu donde dice Seleccionar archivo, damos clic y seleccionamos la base
+   de datos usuarios de la carpeta comprimida. Finalmente pulsamos en el botón Importar y se cargara la base de datos
+
+2. Al momento de abrir la carpeta dentro del editor de código Visual Studio Code, en el archivo "conexión.php"
+   linea 4 de codigo que contiene esta sentencia:
+
+ 	$conectar = new mysqli('localhost','root','123','dbsigesudq','3307');
+    Donde dice '3307', se debe cambiar por el puerto xampp del equipo local, para evitar problemas de conexion con la base     	de datos.
+Asi, entrara en funcionamiento el software.
